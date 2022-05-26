@@ -1,18 +1,14 @@
-function add(n1: number, n2: number, showResult: boolean, phrase: string) {
-  const result = n1 + n2;
+const person = {
+  name: "Marcelo",
+  age: 22,
+  hobbies: ["Sports", "Cooking"],
+};
 
-  if (showResult) {
-    console.log(phrase + result);
-    return;
-  }
+let favoriteActivities: string[];
+favoriteActivities = ["Sports"];
 
-  return result;
+console.log(person.name);
+
+for (const hobby of person.hobbies) {
+  console.log(hobby.toUpperCase());
 }
-
-const number1 = 5;
-const number2 = 2.8;
-const printResult = true;
-const resultPhrase = "Result is: ";
-
-const result = add(number1, number2, printResult, resultPhrase);
-console.log(result);
